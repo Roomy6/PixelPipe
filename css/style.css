@@ -1,4 +1,53 @@
 body {
-    background-color: white;
-    color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+
+  #canvas {
+    border: 2px solid #616161;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #colorMenu {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+#btnPlace {
+    scale: 1.5;
+    position: absolute;
+    bottom: 13%;
+    left: 40%;
+
+    background-color: #ffff;
+    border: 1px solid #ddd;
+}
+
+#btnPlace:hover {
+    background-color: #ddd;
+}
+
+#btnPlace:active {
+     background-color: #9dff81;
+}
+
+.colorTile {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
