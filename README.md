@@ -11,7 +11,7 @@ A simple online pixel art canvas that allows user to draw and create!
 ## TODO
 
 - [ ]  Add a main page
-- [ ]  Make a simple canvas
+- [X]  Make a simple canvas
 - [ ]  Implement online features
 - [ ]  Optimise/fix code
 
