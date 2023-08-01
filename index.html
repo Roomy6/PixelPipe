@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PixelPipe</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/pixelpipe.ico">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-    <canvas id="canvas" width="200" height="200"></canvas>
+    <div id="canvasContainer">
+        <canvas id="canvas" width="1000" height="500"></canvas>
+    </div>
+
     <div id="colorMenu">
         <div class="colorTile" style="background-color: #3e4a56" onclick="setColor('#3e4a56')"></div>
         <div class="colorTile" style="background-color: #d2d3cd" onclick="setColor('#d2d3cd')"></div>
@@ -20,10 +24,14 @@
         <div class="colorTile" style="background-color: #5585a9" onclick="setColor('#5585a9')"></div>
         <div class="colorTile" style="background-color: #7ab8c3" onclick="setColor('#7ab8c3')"></div>
 
-
         <button id="btnPlace">Place</button>
     </div>
 
-    <script src="js/script.js"></script>
+    <div class="topBar">
+        <!-- <p>POS: </p> -->
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

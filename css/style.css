@@ -6,36 +6,48 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #ffffff;
-  }
+}
 
-  #canvas {
-    border: 2px solid #616161;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  }
-
-  #colorMenu {
+#canvas {
     position: absolute;
+    border: 2px solid #616161;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+}
+
+#canvasContainer {
+    position: relative;
+}
+
+#colorMenu {
+    position: fixed;
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #ffff;
+    background-color: rgba(255, 255, 255, 0.4);
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 15px;
     display: flex;
     justify-content: space-between;
-    width: 220px;
+    /* width: 240; */
     height: 50px;
+    gap: 5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  }
+}
 
 #btnPlace {
     scale: 1.5;
     position: absolute;
     bottom: 13%;
     left: 40%;
-
     background-color: #ffff;
     border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 #btnPlace:hover {
@@ -43,11 +55,20 @@ body {
 }
 
 #btnPlace:active {
-     background-color: #9dff81;
+    background-color: #9dff81;
 }
 
 .colorTile {
     width: 20px;
     height: 20px;
     cursor: pointer;
+    border-radius: 20px;
+}
+
+.colorTile:hover {
+    scale: 1.2;
+}
+
+.colorTile:active {
+    scale: 0.8;
 }
