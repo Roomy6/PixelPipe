@@ -1,7 +1,4 @@
-const socket = io.connect("https://pixelpipe.xyz", {
-  transports: ["websocket"], // Use only WebSocket transport
-});
-
+const socketIO = require("socket.io");
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
 const colorMenu = document.getElementById("colorMenu");
@@ -14,6 +11,13 @@ let selectedTile = null;
 let selectedColor = null;
 let selectedCell = null;
 
+const io = socketIO(server);
+
+// Change the protocol from "http" to "https" to use secure WebSocket (wss)
+const socket = io.connect("wss://pixelpipe.xyz", {
+  transports: ["websocket"], // Use only WebSocket transport
+});
+
 function drawCell(x, y, color) {
     context.fillStyle = color;
     context.fillRect(x, y, tileSize, tileSize);
@@ -23,14 +27,12 @@ function drawCell(x, y, color) {
 function setColor(color, tile) {
     currentColor = color;
     if (selectedTile) {
-      selectedTile.style.border = "none";
+    selectedTile.style.border = "none";
     }
     selectedTile = tile;
     selectedColor = color;
-    if (selectedTile) { // Add this condition to check if selectedTile is defined before applying style
-      selectedTile.style.border = "2px solid #616161";
-    }
-  }
+    selectedTile.style.border = "2px solid #616161";
+}
 
 const colorTiles = document.querySelectorAll(".colorTile");
 colorTiles.forEach((tile) => {

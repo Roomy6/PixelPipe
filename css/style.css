@@ -70,5 +70,5 @@ body {
 }
 
 .colorTile:active {
-    scale: 0.8;
+    scale: 1;
 }

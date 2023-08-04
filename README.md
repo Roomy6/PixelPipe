@@ -1,6 +1,11 @@
 ## PixelPipe
 
 A simple online pixel art canvas that allows user to draw and create!
+
+## Website
+https://pixelpipe.xyz/
+(if it say its dangerous... its not. Im having issues implementing SSL and stuff :/)
+
 ## Acknowledgements
 
  - This is my first ever "big" HTML project. Don't expect much.
@@ -11,9 +16,7 @@ A simple online pixel art canvas that allows user to draw and create!
 ## TODO
 
 - [ ]  Add a main page
-- [X]  Make a simple canvas
-- [X]  Implement online features
-- [X]  Optimise/fix code
+- [ ]  Implement zooming and moving around canvas.
 
 
 ## Authors
