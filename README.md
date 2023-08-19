@@ -19,6 +19,9 @@ https://pixelpipe.xyz/
 - [ ]  Add a main page
 - [ ]  Implement zooming and moving around canvas.
 
+# Contribution
+
+Please do.
 
 ## Authors
 
