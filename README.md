@@ -7,6 +7,8 @@ https://pixelpipe.xyz/
 
 (if it say its dangerous... its not. Im having issues implementing SSL and stuff :/)
 
+Welp. I acidentaly wiped my server, so website is not gonna be working. not bothered configuring everythign again lol
+
 ## Acknowledgements
 
  - This is my first ever "big" HTML project. Don't expect much.
